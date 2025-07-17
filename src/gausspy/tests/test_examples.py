@@ -118,7 +118,7 @@ def test_make_train_data():
 
 def _test_train():
 
-    import gausspy.gp as gp
+    from src import gausspy as gp
 
     # imp.reload(gp)
 
@@ -143,7 +143,7 @@ def _test_train():
 
 def test_onephase_decompose_python():
 
-    import gausspy.gp as gp
+    from src import gausspy as gp
     import time
     import pickle
 
@@ -166,7 +166,7 @@ def test_onephase_decompose_python():
 
 def test_onephase_decompose_conv():
 
-    import gausspy.gp as gp
+    from src import gausspy as gp
     import time
     import pickle
 
@@ -189,7 +189,7 @@ def test_onephase_decompose_conv():
 
 def test_twophase_decompose_python():
 
-    import gausspy.gp as gp
+    from src import gausspy as gp
     import time
     import pickle
 
@@ -213,7 +213,7 @@ def test_twophase_decompose_python():
 
 def test_twophase_decompose_conv():
 
-    import gausspy.gp as gp
+    from src import gausspy as gp
     import time
     import pickle
 

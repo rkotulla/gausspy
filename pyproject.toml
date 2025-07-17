@@ -1,0 +1,50 @@
+[build-system]
+requires = [
+    "setuptools>=64.0.0",
+]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "gausspy"
+version = "1.0"
+
+authors = [
+  { name="Robert R. Lindner and the GaussPy team", email="gausspy.software@gmail.com" },
+]
+description = "Python package for applying Autonomous Gaussian Decomposition"
+# long_description = "Leveraging machine learning and derivative spectroscopy to perform autonomous decomposition of spectral line data"
+readme = "README.md"
+license = { text = "MIT" }
+requires-python = ">=3.6"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+
+dependencies = [
+    "astropy",
+    "numpy",
+    "scipy",
+    "lmfit",
+    "matplotlib",
+    "tqdm",
+    "h5py"
+]
+
+[project.urls]
+"Homepage" = "https://gausspy.readthedocs.io/en/latest/"
+
+[project.scripts]
+
+[tool.setuptools]
+include-package-data = true
+
+[tool.setuptools.packages.find]
+where = ['src']
+
+[tool.setuptools.package-data]
+#"*" = ["*.c"]
+#gausspy = "data/*"
+#gausspy.tests = "coveragerc"
+
